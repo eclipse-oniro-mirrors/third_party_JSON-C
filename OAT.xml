@@ -89,8 +89,8 @@ Note:If the text contains special characters, please escape them according to th
         </licensematcherlist>
         <filefilterlist>
             <filefilter name="defaultFilter" desc="Files not to check">
-                <filteritem type="filepath" name="json-c/autoconf-archive/m4/ax_compile_check_sizeof.m4 " desc="not used in ohos"/>
-                <filteritem type="filepath" name="Doxyfile " desc="not used in ohos"/>
+                <filteritem type="filepath" name="json-c/autoconf-archive/m4/ax_compile_check_sizeof.m4 " desc="not used in ohos "/>
+                <filteritem type="filepath" name="Doxyfile " desc="not used in ohos "/>
 			</filefilter>	
         </filefilterlist>	
     </oatconfig>
