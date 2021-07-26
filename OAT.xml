@@ -57,7 +57,6 @@ Note:If the text contains special characters, please escape them according to th
 <configuration>
     <oatconfig>
         <licensefile>json-c/COPYING</licensefile>
-        <licensefile>COPYING</licensefile>
 		<policylist>
 			<policy name="projectPolicy" desc="">
                 <policyitem type="compatibility" name="FSF Unlimited License" path=".*" desc="This file is free software。"/>
