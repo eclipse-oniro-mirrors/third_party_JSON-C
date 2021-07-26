@@ -64,7 +64,7 @@ Note:If the text contains special characters, please escape them according to th
                 <policyitem type="compatibility" name="MIT" path="json-c/autoconf-archive/m4/ax_require_defined.m4" desc="兼容license"/>
                 <policyitem type="compatibility" name="MIT|GPLStyleLicense" path="json-c/doc/html/jquery.js" desc="兼容license"/>
                 <policyitem type="compatibility" name="GPL-3.0+" path="json-c/.*" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
-			</policy>
+		    </policy>
 		</policylist>
         <licensematcherlist>
             <licensematcher name="FSF Unlimited License" desc="">
