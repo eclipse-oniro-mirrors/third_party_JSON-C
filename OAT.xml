@@ -56,17 +56,43 @@ Note:If the text contains special characters, please escape them according to th
 -->
 <configuration>
     <oatconfig>
+        <licensefile>json-c/COPYING</licensefile>
         <licensefile>COPYING</licensefile>
+		<policylist>
+			<policy name="projectPolicy" desc="">
+                <policyitem type="compatibility" name="FSF Unlimited License" path=".*" desc="This file is free software。"/>
+                <policyitem type="compatibility" name="FSFAP" path="json-c/autoconf-archive/m4/ax_require_defined.m4" desc="兼容license"/>
+                <policyitem type="compatibility" name="MIT" path="json-c/autoconf-archive/m4/ax_require_defined.m4" desc="兼容license"/>
+                <policyitem type="compatibility" name="MIT|GPLStyleLicense" path="json-c/doc/html/jquery.js" desc="兼容license"/>
+                <policyitem type="compatibility" name="GPL-3.0+" path="json-c/.*" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
+			</policy>
+		</policylist>
+        <licensematcherlist>
+            <licensematcher name="FSF Unlimited License" desc="">
+                <licensetext name="
+                     This program is free software: you can redistribute it and/or modify it
+                     under the terms of the GNU General Public License as published by the
+                     Free Software Foundation, either version 3 of the License, or (at your
+                     option) any later version.
+                " desc=""/>
+                <licensetext name="
+                     This Makefile.in is free software; the Free Software Foundation
+                     gives unlimited permission to copy and/or distribute it,
+                     with or without modifications, as long as this notice is preserved.
+                " desc=""/>
+                <licensetext name="
+                     Copying and distribution of this file, with or without modification, are
+                     permitted in any medium without royalty provided the copyright notice
+                     and this notice are preserved. This file is offered as-is, without any
+                     warranty.
+                " desc=""/>
+            </licensematcher>
+        </licensematcherlist>
         <filefilterlist>
-            <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
-                <filteritem type="filename" name="README.OpenSource"/>
-                <filteritem type="filename" name="README"/>
-                <filteritem type="filename" name="helpers.h"  desc="not used in ohos"/>
-            </filefilter>
-            <filefilter name="copyrightPolicyFilter" desc="Filters for copyright header policies" >
-                <filteritem type="filename" name="README.OpenSource"/>
-                <filteritem type="filename" name="README"/>
-            </filefilter>
-        </filefilterlist>
+            <filefilter name="defaultFilter" desc="Files not to check">
+                <filteritem type="filepath" name="json-c/autoconf-archive/m4/ax_compile_check_sizeof.m4 " desc="not used in ohos"/>
+                <filteritem type="filepath" name="Doxyfile " desc="not used in ohos"/>
+			</filefilter>	
+        </filefilterlist>	
     </oatconfig>
 </configuration>
