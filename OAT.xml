@@ -63,7 +63,9 @@ Note:If the text contains special characters, please escape them according to th
 				<policyitem type="compatibility" name="FSFAP" path="json-c/autoconf-archive/m4/ax_require_defined.m4" desc="兼容license "/>
 				<policyitem type="compatibility" name="MIT" path="json-c/autoconf-archive/m4/ax_require_defined.m4" desc="兼容license "/>
 				<policyitem type="compatibility" name="MIT|GPLStyleLicense" path="json-c/doc/html/jquery.js" desc="兼容license "/>
+				<policyitem type="compatibility" name="GPLStyleLicense" path="json-c/.*" desc="This file is free software "/>
 				<policyitem type="compatibility" name="GPL-3.0+" path="json-c/.*" desc="This program is free software."/>
+				<policyitem type="compatibility" name="FSFUL" path="json-c/configure" desc="This program is free software."/>
 			</policy>
 		</policylist>
 		<licensematcherlist>
@@ -90,7 +92,7 @@ Note:If the text contains special characters, please escape them according to th
 		<filefilterlist>
 			<filefilter name="defaultFilter" desc="Files not to check">
 				<filteritem type="filepath" name="json-c/autoconf-archive/m4/ax_compile_check_sizeof.m4 " desc="not used in ohos "/>
-				<filteritem type="filepath" name="Doxyfile " desc="not used in ohos "/>
+				<filteritem type="filepath" name="json-c/Doxyfile " desc="not used in ohos "/>
 			</filefilter>
 		</filefilterlist>
 	</oatconfig>
