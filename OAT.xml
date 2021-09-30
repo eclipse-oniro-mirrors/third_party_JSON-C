@@ -94,6 +94,9 @@ Note:If the text contains special characters, please escape them according to th
 				<filteritem type="filepath" name="json-c/autoconf-archive/m4/ax_compile_check_sizeof.m4 " desc="not used in ohos "/>
 				<filteritem type="filepath" name="json-c/Doxyfile " desc="not used in ohos "/>
 			</filefilter>
+			<filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
+				<filteritem type="filename" name="*.gmo" desc="not used in ohos"/>
+			</filefilter>
 		</filefilterlist>
 	</oatconfig>
 </configuration>
