@@ -24,7 +24,7 @@
         "destPath": "third_party/JSON-C"
     },
     "component": {
-        "name": "thirdparty_json-c",
+        "name": "thirdparty_json_c",
         "subsystem": "",
         "syscap": [],
         "features": [],
