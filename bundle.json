@@ -18,13 +18,13 @@
         "JSON",
         "C"
     ],
-    "envs": [],
-    "dirs": [],
+    "envs": {},
+    "dirs": {},
     "segment": {
         "destPath": "third_party/JSON-C"
     },
     "component": {
-        "name": "thirdparty_json_c",
+        "name": "thirdparty_JSON-C",
         "subsystem": "",
         "syscap": [],
         "features": [],
